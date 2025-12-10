@@ -1,0 +1,47 @@
+dia_mat
+=======
+  Textures:
+    - be_dama_hikari09_i8
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 4, 76, 0, 72
+    - 226, 255, 173, 255
+
+  Steps:
+    1: RGB = (lerp from (4, 76, 0) to (226, 255, 173) using (tex #1 RGB))
+         A = 0
+    2: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+
+
+ring_mat
+========
+  Textures:
+    - be_dama_hikari09_i8
+        Offset: 0, -0.09765625
+        Scale: 0.699999988079071, 0.4000000059604645
+    - toy_ring_awaseme_silver01_s3tc
+    - be_dama_hikari09_i8
+        Scale: 0.5, 0.699999988079071
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 194, 194, 194, 72
+    - 44, 40, 20, 255
+    - 150, 150, 150, 255
+
+  Steps:
+    1: RGB = (lerp from (44, 40, 20) to (194, 194, 194) using (tex #1 RGB))
+         A = 0
+    2: RGB = (lerp from (prev. RGB) to (tex #2 RGB) using (tex #2 A))
+         A = 0
+    3: RGB = ((150, 150, 150) * (tex #3 A)), then add (prev. RGB)
+         A = 0, then add (prev. A)
+    4: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = (vertex A), then add (prev. A)

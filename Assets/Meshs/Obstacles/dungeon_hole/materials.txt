@@ -1,0 +1,28 @@
+dunjon_hole_v
+=============
+  Textures:
+    - dungeon_hole_s3tc
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 204, 204, 204, 255
+    - 204, 204, 204, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+
+
+
+flag1_v
+=======
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Steps:
+    1: RGB = (vertex RGB), multiply by 4
+         A = (vertex A)

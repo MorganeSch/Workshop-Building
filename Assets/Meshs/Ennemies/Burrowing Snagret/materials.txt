@@ -1,0 +1,50 @@
+hebihana_body
+=============
+  Textures:
+    - body32_2_s3tc
+        Scale: 3, 10
+    - body32_ind4
+        Scale: 0.6000000238418579, 0.6000000238418579
+    - IP2V_hebienv2
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Constant Colors:
+    - 87, 94, 96, 255
+
+  Material Colors:
+    - 240, 240, 240, 255
+    - 240, 240, 240, 255
+
+  Color Registers:
+    - 582, 582, 582, 255
+
+
+
+hebihana_hane
+=============
+  Textures:
+    - haneA8
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 240, 240, 240, 255
+    - 240, 240, 240, 255
+
+
+
+hebihina_main
+=============
+  Textures:
+    - hebihina_s3tc
+    - IP2V_hebienv2
+        Offset: 0.0830078125, 0.44999998807907104
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - -25, -25, -25, 255

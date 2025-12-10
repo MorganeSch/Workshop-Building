@@ -1,0 +1,54 @@
+watch08_07a_watch_mat
+=====================
+  Textures:
+    - watch09_i4
+    - kankyou_crom01_i4
+        Scale: 1, 0.5
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 255, 224, 202, 255
+    - 255, 224, 202, 255
+
+  Steps:
+    1: RGB = (0, 0, 0), then add (tex #1 RGB)
+         A = 0
+    2: RGB = ((prev. RGB) * (tex #2 RGB))
+         A = 0
+    3: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+
+
+watch08_07a_watch_mat(2)
+========================
+  Textures:
+    - kankyou_crom01_i4
+        Scale: 1.100000023841858, 1.100000023841858
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+
+
+
+watch08_07a_watch_mat(3)
+========================
+  Textures:
+    - watch09_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 230, 245, 255, 255
+    - 230, 245, 255, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = 0

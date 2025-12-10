@@ -1,0 +1,52 @@
+mat_yakichappy_body
+===================
+  Textures:
+    - yakichappy_main_s3tc
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+
+
+
+mat_yakichappy_senaka
+=====================
+  Textures:
+    - P_tamatama
+        Offset: 0, -0.8760331273078918
+        Scale: 1.5, 1.2999999523162842
+    - IP2_mizutama2_ia
+    - P_tamatama
+        Offset: 0, -0.8760331273078918
+        Scale: 1.5, 1.2999999523162842
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Constant Colors:
+    - 20, 10, 0, 255
+
+  Material Colors:
+    - 200, 80, 0, 255
+    - 200, 80, 0, 255
+
+  Color Registers:
+    - 20, 10, 0, 255
+    - 8, 4, 4, 255
+
+  Steps:
+    1: RGB = (lerp from (20, 10, 0) to (vertex RGB) using (tex #1 RGB))
+         A = ((tex #1 A) * (vertex A))
+    2: RGB = (lerp from (8, 4, 4) to (20, 10, 0) using (tex #2 RGB)), then add (prev. RGB)
+         A = 0, then add 128
+    3: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = (vertex A)
+
+  Animation:
+    000:  60,  40,  18
+    060: 255,  30,   0
+    120:  60,  40,  18
+    180:  20,  10,   0

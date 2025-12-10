@@ -1,0 +1,28 @@
+bombmat1
+========
+  Textures:
+    - BombRock
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 30, -70, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), then add (255, 30, -70), multiply by 4
+         A = ((tex #1 A) * (vertex A))
+
+
+
+bombmat1_v
+==========
+  Textures:
+    - BombRock
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))

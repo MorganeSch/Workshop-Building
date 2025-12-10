@@ -1,0 +1,25 @@
+kawa1_v_x
+=========
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 226, 226, 226, 255
+
+
+
+naka1_v
+=======
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 253, 0, 255, 255
+    - 253, 0, 255, 255
+
+  Color Registers:
+    - 255, 50, 200, 255

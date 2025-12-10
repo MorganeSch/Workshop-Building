@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 9b609647e017ef34a9898190a8b1e0ce
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _multi_kankyou02_s3tc: {fileID: 2800000, guid: 66540d1906b24b04a9d96e268e2f2535, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

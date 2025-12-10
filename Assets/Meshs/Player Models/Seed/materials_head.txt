@@ -1,0 +1,15 @@
+body1
+=====
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 140, 0, 255
+
+  Steps:
+    1: RGB = ((255, 140, 0) * (vertex RGB)), multiply by 2
+         A = (vertex A)
+    2: RGB = (prev. RGB), then add (vertex RGB)
+         A = (vertex A)

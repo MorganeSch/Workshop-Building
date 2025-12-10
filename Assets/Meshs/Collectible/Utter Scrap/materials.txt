@@ -1,0 +1,43 @@
+almi_mat_v
+==========
+  Textures:
+    - almi_i4
+    - kankyou_crom01_i4
+        Scale: 0.5, 0.5
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 255, 255, 120
+
+  Steps:
+    1: RGB = (0, 0, 0), then add (tex #1 RGB)
+         A = 0
+    2: RGB = (lerp from (prev. RGB) to (128, 128, 128) using (tex #2 RGB))
+         A = 0
+    3: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+
+
+dust_kan_mat_v
+==============
+  Textures:
+    - label01_03_s3tc
+    - chijou_kankyou07_i4
+        Scale: 1, 2
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 255, 255, 120
+
+  Steps:
+    1: RGB = ((tex #2 A) * (tex #2 RGB))
+         A = 0
+    2: RGB = ((120, 120, 120) * (prev. RGB)), then add (tex #1 RGB)
+         A = 0
+    3: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0

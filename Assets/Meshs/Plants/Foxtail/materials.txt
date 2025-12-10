@@ -1,0 +1,32 @@
+ha_v
+====
+  Textures:
+    - nekojarashi06_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 204, 204, 204, 255
+    - 204, 204, 204, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+
+
+
+tane_v
+======
+  Textures:
+    - nekojarashi01_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 56, 28, 0, 0
+
+  Steps:
+    1: RGB = (lerp from (56, 28, 0) to (255, 255, 255) using (vertex RGB)), multiply by 2
+         A = ((vertex A) * (tex #1 A))

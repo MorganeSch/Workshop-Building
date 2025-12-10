@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 60b3ea7ede5b7f149b07185fa98e198a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _vertexColors: {fileID: 2800000, guid: 490aa515be9c70a45a3b40d244060194, type: 3}
+  - _nekojarashi01_i4: {fileID: 2800000, guid: 5133b6e8748690144b3652be15a5d990, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+label_mat
+=========
+  Textures:
+    - denchi_type3_red_s3tc
+    - kankyou_crom01_i4
+        Scale: 1.2000000476837158, 1.2000000476837158
+    - denchi_type3_red_spq_mask_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 255, 255, 56
+
+  Steps:
+    1: RGB = (0, 0, 0), then add (tex #1 RGB)
+         A = 0
+    2: RGB = ((prev. RGB) * (tex #2 RGB))
+         A = 0
+    3: RGB = (lerp from (prev. RGB) to (56, 56, 56) using (tex #3 A)), then add (prev. RGB)
+         A = 0
+    4: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0

@@ -1,0 +1,63 @@
+dia1_mat
+========
+  Textures:
+    - toy_teala_dia02_i4
+        Scale: 1.5, 1.5
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 255, 255, 255, 180
+    - 255, 255, 255, 180
+
+  Color Registers:
+    - 255, 0, 70, 255
+
+  Steps:
+    1: RGB = ((vertex RGB) * (tex #1 RGB)), multiply by 2
+         A = 0, then add (tex #1 A)
+    2: RGB = (vertex RGB), then add (prev. RGB)
+         A = ((vertex A) * (prev. A))
+
+
+
+flame_mat
+=========
+  Textures:
+    - kankyou_crom01_i4
+        Scale: 0.5, 0.5
+    - dust_yogore01_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 36, 20, 56, 255
+
+  Steps:
+    1: RGB = (tex #1 RGB), then add (36, 20, 56)
+         A = 0
+    2: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+    3: RGB = ((vertex RGB) * (tex #2 A)), then add (prev. RGB)
+         A = 0
+
+
+
+dia1_mat(2)
+===========
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 150, 20, 20, 255
+    - 242, 161, 125, 255
+
+  Steps:
+    1: RGB = ((150, 20, 20) * (vertex RGB)), multiply by 2
+         A = 0
+    2: RGB = ((242, 161, 125) * (vertex RGB)), then add (prev. RGB)
+         A = 0

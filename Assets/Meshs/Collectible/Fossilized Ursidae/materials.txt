@@ -1,0 +1,55 @@
+dodai_mat
+=========
+  Textures:
+    - kumakibori_daiza03_s3tc
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = 0
+
+
+
+kage_mat
+========
+  Textures:
+    - kumakibori_kage01_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 255, 255, 255, 70
+    - 255, 255, 255, 70
+
+  Color Registers:
+    - 8, 8, 0, 255
+
+  Steps:
+    1: RGB = (lerp from (vertex RGB) to (8, 8, 0) using (tex #1 RGB))
+         A = (lerp from (tex #1 A) to 0 using (vertex A))
+
+
+
+kuma_mat
+========
+  Textures:
+    - kumakibori_kuma06_s3tc
+    - kumakibori_mask01_i4
+        Scale: 1.5, 1.5
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 113, 157, 182, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (113, 157, 182))
+         A = 0
+    2: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+    3: RGB = ((tex #2 A) * (vertex RGB)), then add (prev. RGB)
+         A = 0

@@ -1,0 +1,30 @@
+tex_hukuro_new_v
+================
+  Textures:
+    - hukuro
+    - moji
+        Offset: 1, 3.5
+        Scale: 10, 10
+    - noiz
+        Offset: 0.7421875, 0
+        Center: 0.0830078125, 0.5
+        Scale: 8.5, 8.5
+    - hukuro
+        Center: 0, 1
+        Scale: 8.199999809265137, 4.300000190734863
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Constant Colors:
+    - 255, 255, 255, 127
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB))
+         A = 0, then add (tex #1 A)
+    2: RGB = ((tex #2 RGB) * (prev. RGB))
+         A = 0, then add (prev. A)
+    3: RGB = ((tex #3 RGB) * (prev. RGB)), multiply by 2
+         A = ((prev. A) * (vertex A))
+    4: RGB = (0, 0, 0), then add (prev. RGB)
+         A = 0, then add (tex #4 A)

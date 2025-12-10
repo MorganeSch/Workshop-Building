@@ -1,0 +1,39 @@
+mat_babykabuto_body
+===================
+  Textures:
+    - IP2_mizutama2_ia
+        Offset: 0.2880859375, 0
+        Scale: 0.0390625, 0.537109375
+    - babykabuto_dummy_i4
+    - dorodoro_i8
+        Offset: 0, 0.699999988079071
+        Scale: 4, 0
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Constant Colors:
+    - 255, 255, 255, 127
+
+  Color Registers:
+    - 20, 72, 64, 255
+
+
+
+mat_babykabuto_eye
+==================
+  Textures:
+    - babykabuto_dummy_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+
+
+mat_babykabuto_head
+===================
+  Textures:
+    - babykabuto_dummy_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0

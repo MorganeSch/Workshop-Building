@@ -1,0 +1,84 @@
+crown_mat
+=========
+  Textures:
+    - multi_kankyou02_s3tc
+        Scale: 0.800000011920929, 0.800000011920929
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 267, 226, 121, 255
+
+  Steps:
+    1: RGB = (0, 0, 0), then add (267, 226, 121)
+         A = 0
+    2: RGB = ((tex #1 RGB) * (prev. RGB))
+         A = 0
+    3: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+
+
+dia1_mat
+========
+  Textures:
+    - be_dama_hikari08_i8
+        Offset: 0, -0.30000001192092896
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 204, 204, 204, 255
+    - 204, 204, 204, 255
+
+  Color Registers:
+    - 44, 28, 222, 255
+
+  Steps:
+    1: RGB = (tex #1 RGB), then add (44, 28, 222)
+         A = 0
+    2: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+
+
+dia2_mat
+========
+  Textures:
+    - be_dama_hikari08_i8
+        Offset: 0, -0.30000001192092896
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 204, 204, 204, 255
+    - 204, 204, 204, 255
+
+  Color Registers:
+    - 200, 0, 0, 255
+
+  Steps:
+    1: RGB = (tex #1 RGB), then add (200, 0, 0)
+         A = 0
+    2: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+
+
+flame_mat
+=========
+  Textures:
+    - multi_kankyou02_s3tc
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 0, 0, 28, 24
+
+  Steps:
+    1: RGB = (lerp from (24, 24, 24) to (vertex RGB) using (tex #1 RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))

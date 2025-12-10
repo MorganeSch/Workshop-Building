@@ -1,0 +1,41 @@
+kanagu_mat
+==========
+  Textures:
+    - denchi_top01_i4
+    - multi_kankyou02_s3tc
+        Scale: 1.2000000476837158, 1.2000000476837158
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 255, 255, 222
+    - 255, 255, 255, 89
+
+  Steps:
+    1: RGB = ((vertex RGB) * (tex #1 RGB)), multiply by 2
+         A = 0
+    2: RGB = ((tex #2 RGB) * (vertex RGB)), then add (prev. RGB)
+         A = 0
+
+
+
+label_mat
+=========
+  Textures:
+    - pal_denchi_1_01_s3tc
+    - multi_kankyou02_s3tc
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 255, 255, 70
+
+  Steps:
+    1: RGB = (0, 0, 0), then add (tex #1 RGB)
+         A = 0
+    2: RGB = ((tex #2 RGB) * (70, 70, 70)), then add (prev. RGB)
+         A = 0
+    3: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0

@@ -1,0 +1,43 @@
+lambert1
+========
+  Textures:
+    - water_inoue2_0709
+        Offset: 0.09333333373069763, 0.09333333373069763
+        Scale: 0.5, 1
+    - water_inoue2_0709
+        Offset: 0.09333333373069763, 0.09333333373069763
+        Scale: -0.699999988079071, 1.2999999523162842
+    - waterind1_inoue_0710
+        Offset: -0.18666666746139526, 0.2800000011920929
+        Scale: 1.25, 1
+    - fbtex_dummy
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Constant Colors:
+    - 218, 222, 225, 60
+    - 255, 255, 255, 23
+    - 255, 255, 255, 126
+    - 255, 255, 255, 32
+
+  Material Colors:
+    - 67, 67, 67, 255
+    - 67, 67, 67, 255
+
+  Color Registers:
+    - 28, 40, 0, 80
+    - 255, 255, 255, 222
+    - 255, 255, 255, 133
+
+  Steps:
+    1: RGB = (lerp from (126, 126, 126) to (0, 0, 0) using (tex #1 RGB)), then add (128, 128, 128), divide by 2
+         A = 0, then add (tex #1 A)
+    2: RGB = ((126, 126, 126) * (tex #2 RGB)), then add (prev. RGB)
+         A = ((tex #2 A) * (prev. A)), then add 32, multiply by 4
+    3: RGB = -1 * (vertex RGB), then add (tex #4 RGB), multiply by 2
+         A = ((prev. A) * (prev. A)), then add 32, subtract 127, multiply by 4
+    4: RGB = ((vertex RGB) * (prev. A)), then add (prev. RGB)
+         A = 23, then add (prev. A), subtract 127
+    5: RGB = if R of (prev. A) > (255, 255, 255), use (60, 60, 60), otherwise (0, 0, 0), then add (prev. RGB)
+         A = 0

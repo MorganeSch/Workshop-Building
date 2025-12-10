@@ -1,0 +1,5 @@
+newmtl tex_concrete_b_v_x_uv3
+map_Kd practice_concrete_b_s3tc.png
+Kd 1 1 1
+d 1
+

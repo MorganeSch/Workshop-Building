@@ -1,0 +1,166 @@
+body
+====
+  Textures:
+    - stripe_kankyou_s3tc
+        Offset: 0.8251953125, 0.5078125
+        Center: 0, 0
+        Scale: 0.6591796875, 0.9326171875
+    - ufo_s3tc
+    - sabi_mask_i4
+
+  Ambient Colors:
+    - 24, 24, 24, 0
+
+  Material Colors:
+    - 255, 255, 230, 255
+    - 255, 255, 230, 255
+
+  Color Registers:
+    - 0, 0, 0, 50
+
+  Steps:
+    1: RGB = ((vertex RGB) * (tex #2 RGB)), multiply by 2
+         A = (vertex A)
+    2: RGB = (tex #1 RGB), multiply by 2
+         A = (vertex A)
+    3: RGB = ((tex #3 RGB) * (prev. RGB))
+         A = (vertex A)
+    4: RGB = ((prev. RGB) * (vertex RGB)), then add (255, 255, 255)
+         A = (vertex A)
+
+
+
+cocpit1_cov1
+============
+  Textures:
+    - cockpit_kankyou_565
+        Offset: 0.5, 0.5
+        Center: 0, 0
+        Scale: 0.5, 0.5
+
+  Ambient Colors:
+    - 24, 24, 24, 0
+
+  Constant Colors:
+    - 0, 0, 0, 165
+
+  Material Colors:
+    - 186, 186, 186, 255
+    - 186, 186, 186, 255
+
+  Color Registers:
+    - 44, 68, 93, 255
+
+  Steps:
+    1: RGB = (lerp from (vertex RGB) to (tex #1 RGB) using (44, 68, 93))
+         A = 0
+    2: RGB = (vertex RGB), then add (prev. RGB), multiply by 2
+         A = (165 * (vertex A))
+
+
+
+cocpit1_cov2
+============
+  Textures:
+    - cockpit_kankyou_565
+        Offset: 0.5, 0.5
+        Center: 0, 0
+        Scale: 0.5, 0.5
+
+  Ambient Colors:
+    - 24, 24, 24, 0
+
+  Constant Colors:
+    - 0, 0, 0, 165
+
+  Material Colors:
+    - 186, 186, 186, 255
+    - 186, 186, 186, 255
+
+  Color Registers:
+    - 44, 68, 93, 255
+
+  Steps:
+    1: RGB = (lerp from (vertex RGB) to (tex #1 RGB) using (44, 68, 93))
+         A = 0
+    2: RGB = (vertex RGB), then add (prev. RGB), multiply by 2
+         A = (165 * (vertex A))
+
+
+
+light_blue_r1
+=============
+  Textures:
+
+  Ambient Colors:
+    - 24, 24, 24, 0
+
+  Color Registers:
+    - 60, 60, 60, 125
+    - 17, 157, 189, 200
+
+  Steps:
+    1: RGB = (17, 157, 189), then add (vertex RGB)
+         A = 200
+
+  Animation:
+    00: (  0, 200, 255)
+    10: ( 50,  80,  70)
+    20: (  0, 200, 255)
+
+
+
+metal
+=====
+  Textures:
+    - stripe_kankyou_s3tc
+        Offset: 0.5, 0.5
+        Center: 0, 0
+        Scale: 0.5, 0.5
+    - metal_sabi_mask_i4
+        Scale: 3.22265625, 3.22265625
+    - metal_sabi_s3tc
+        Scale: 3.2226600646972656, 3.2226600646972656
+
+  Ambient Colors:
+    - 24, 24, 24, 0
+
+  Material Colors:
+    - 124, 115, 104, 255
+    - 124, 115, 104, 255
+
+  Color Registers:
+    - -153, 133, 255, 50
+
+  Steps:
+    1: RGB = ((vertex RGB) * (tex #1 RGB)), multiply by 4
+         A = (vertex A)
+    2: RGB = ((tex #3 RGB) * (vertex RGB))
+         A = (vertex A)
+    3: RGB = (lerp from (255, 255, 255) to (prev. RGB) using (tex #2 RGB)), then add (vertex RGB), multiply by 2
+         A = (vertex A)
+
+
+
+piston1
+=======
+  Textures:
+
+  Ambient Colors:
+    - 24, 24, 24, 0
+
+  Color Registers:
+    - 213, 55, 76, 56
+    - 255, 20, 12, 180
+    - 255, 0, 0, 255
+
+  Steps:
+    1: RGB = (213, 55, 76), multiply by 2
+         A = 0
+
+  Animation:
+    000: ( 55,  25,  16) A = 30
+    024: (255,  64,  92) A = 64
+    049: ( 55,  25,  16) A = 30
+    074: (255,  64,  92) A = 64
+    100: ( 55,  25,  16) A = 30

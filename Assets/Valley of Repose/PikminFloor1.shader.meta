@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: ac98db5acd59a4e4a9176d5e664302f7
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _practice_jimen_a_s3tc: {fileID: 2800000, guid: 0d8765b7630ee074ea54eae1692f20c4, type: 3}
+  - _practice_all_shadow_s3tc: {fileID: 2800000, guid: 352508e075fd8d94986185fa933deca1, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

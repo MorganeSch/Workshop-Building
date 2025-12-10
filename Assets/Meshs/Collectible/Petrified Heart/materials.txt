@@ -1,0 +1,94 @@
+houseki01_mat_v
+===============
+  Textures:
+    - houseki02_4i
+        Scale: -0.7373046875, -0.7373046875
+    - houseki04_565
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 120, 0, 64, 175
+    - 120, 0, 64, 175
+
+  Color Registers:
+    - 220, 220, 220, 0
+
+  Steps:
+    1: RGB = (vertex RGB)
+         A = (lerp from 128 to (vertex A) using (tex #1 A))
+    2: RGB = ((tex #2 RGB) * (prev. RGB))
+         A = 0, then add (prev. A)
+
+
+
+houseki02_mat_v
+===============
+  Textures:
+    - houseki02_4i
+        Scale: -0.7373046875, -0.7373046875
+    - houseki04_565
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 255, 62, 0, 175
+    - 255, 62, 0, 175
+
+  Color Registers:
+    - 220, 220, 220, 0
+
+  Steps:
+    1: RGB = (vertex RGB)
+         A = (lerp from 32 to (vertex A) using (tex #1 A))
+    2: RGB = ((tex #2 RGB) * (prev. RGB)), multiply by 2
+         A = 0, then add (prev. A)
+
+
+
+houseki03_mat_v
+===============
+  Textures:
+    - houseki02_4i
+        Scale: -0.7373046875, -0.7373046875
+    - houseki04_565
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 179, 0, 104, 175
+    - 179, 0, 104, 175
+
+  Color Registers:
+    - 220, 220, 220, 0
+
+  Steps:
+    1: RGB = (vertex RGB)
+         A = (lerp from 32 to (vertex A) using (tex #1 A))
+    2: RGB = ((tex #2 RGB) * (prev. RGB)), multiply by 2
+         A = 0, then add (prev. A)
+
+
+
+houseki04_mat_v
+===============
+  Textures:
+    - houseki02_4i
+        Scale: -0.7373046875, -0.7373046875
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 0, 0, 0, 168
+    - 0, 0, 0, 168
+
+  Color Registers:
+    - 220, 220, 220, 0
+
+  Steps:
+    1: RGB = (tex #1 RGB), multiply by 2
+         A = (lerp from 32 to (vertex A) using (tex #1 A))

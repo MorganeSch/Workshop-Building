@@ -1,0 +1,13 @@
+mat_tamagomushi_body_v
+======================
+  Textures:
+    - tamagomushi_main_s3tc
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+    2: RGB = ((vertex RGB) * (159, 159, 159)), then add (prev. RGB)
+         A = (vertex A)

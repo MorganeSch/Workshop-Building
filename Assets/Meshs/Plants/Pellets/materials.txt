@@ -1,0 +1,36 @@
+bpel1
+=====
+  Textures:
+    - re_pellet01_i4
+    - re_no_tex02_ia4
+        Scale: -1.600000023841858, 1.600000023841858
+    - re_pellet_kankyou01_i4
+        Offset: 0.5, 0.5
+        Center: 0, 0
+        Scale: 0.5, 0.5
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Material Colors:
+    - 255, 255, 255, 200
+    - 255, 255, 255, 200
+
+  Color Registers:
+    - 0, 51, 255, 200
+    - 251, 17, 0, 255
+
+  Steps:
+    1: RGB = (lerp from (0, 51, 255) to (0, 0, 0) using (tex #1 RGB)), then add (tex #1 RGB)
+         A = 0
+    2: RGB = (lerp from (prev. RGB) to (tex #2 RGB) using (tex #2 A))
+         A = 0
+    3: RGB = (prev. RGB), then add (tex #3 RGB)
+         A = 0
+    4: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+  Colors:
+    Blue: lerp from (0, 51, 255)...
+    Red: lerp from (251, 17, 0)...
+    Yellow: lerp from (255, 220, 52)...

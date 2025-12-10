@@ -1,0 +1,37 @@
+arrow
+=====
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 0, 255, 255
+
+  Olimar Color:
+    - 255, 0, 255
+
+  Louie Color:
+    - 64, 255, 255
+
+
+
+wakka
+=====
+  Textures:
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 150, 255, 255
+
+  Olimar Animation:
+    00: (255,   0, 255)
+    05: (255, 168, 255)
+    10: (255,   0, 255)
+
+  Louie Animation:
+    00: ( 64, 255, 255)
+    05: (  0,  64, 255)
+    10: ( 64, 255, 255)

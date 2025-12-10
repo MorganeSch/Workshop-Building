@@ -1,0 +1,28 @@
+mat1
+====
+  Textures:
+    - hanatirasi_565
+    - mar_line_i43
+        Offset: 0.7804555296897888, 0
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 255, 255, 159
+    - 20, 60, 84, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+    2: RGB = ((159, 159, 159) * (tex #2 RGB)), then add (prev. RGB)
+         A = (vertex A)
+    3: RGB = ((vertex RGB) * (96, 96, 96)), then add (prev. RGB)
+         A = (vertex A)
+
+  Animation (Alpha):
+    00:   0
+    47:  64
+    53: 200
+    63:  64
+    80:   0
