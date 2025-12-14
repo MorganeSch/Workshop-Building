@@ -13,7 +13,7 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _practice_all_shadow_s3tc:
-        m_Texture: {fileID: 2800000, guid: 352508e075fd8d94986185fa933deca1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3c87e4a115b950a42b9c995d23e592e7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _practice_kan_snow_i4:
@@ -73,6 +73,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _practice_snow_kiwa_s3tc:
         m_Texture: {fileID: 2800000, guid: 39eb886a0e152a542ab16c4f5f9cefa5, type: 3}
+        m_Scale: {x: 0.1, y: 0.1}
+        m_Offset: {x: 0, y: 0}
+    - _practice_snow_kiwa_s3tc1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _snow_kiwa_kage_win:
+        m_Texture: {fileID: 2800000, guid: 971f95438f8bd2c4c95acbda87d3b93f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:

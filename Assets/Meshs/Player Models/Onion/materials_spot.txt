@@ -1,0 +1,32 @@
+spotEffect_v_x
+==============
+  Textures:
+    - IP2V_onyongrad_i8
+        Offset: 0, -2.866666555404663
+        Scale: 1, 8
+    - IP2V_sandnoise_ia8
+        Offset: 0, 0.9350000619888306
+        Scale: 1, -0.1171875
+
+  Ambient Colors:
+    - 100, 100, 100, 0
+
+  Constant Colors:
+    - 0, 120, 255, 255
+
+  Material Colors:
+    - 255, 254, 255, 255
+    - 255, 254, 255, 255
+
+  Color Registers:
+    - 95, 206, 231, -45
+    - 0, 120, 255, 255
+
+  Steps:
+    1: RGB = (lerp from (0, 120, 255) to (95, 206, 231) using (tex #1 RGB)), subtract 127
+         A = ((vertex A) * (tex #1 A)), then add -45, multiply by 2
+
+  Colors:
+    red:    lerp from (230,   0,  97) to (244, 125, 159)...
+    yellow: lerp from (163, 182,   0) to (230, 230, 144)...
+    blue:   lerp from (  0, 120, 255) to ( 95, 206, 231)...

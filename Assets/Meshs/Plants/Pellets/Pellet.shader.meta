@@ -7,6 +7,8 @@ ShaderImporter:
   - _re_no_tex02_ia4: {fileID: 2800000, guid: 760210870f74cbb4b96dbfd3ecbfba3e, type: 3}
   - _re_no_tex03_ia4: {fileID: 2800000, guid: f37c3803ce55f9d4e90a3cb9c47e8be5, type: 3}
   - _re_no_tex04_ia4: {fileID: 2800000, guid: ae4bbc0ea81153a4dbf03af59ca375ef, type: 3}
+  - _re_pellet01_i4d: {fileID: 2800000, guid: 4ee7eb29eada52441bf84447e87a41c8, type: 3}
+  - _re_pellet_kankyou01_i4: {fileID: 2800000, guid: cc3ff85c071ae8b4193f92fe148fde5a, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
