@@ -3,8 +3,9 @@ guid: f0ea2976c932c534994166d5174bed8f
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
-  - _practice_snow_kiwa_s3tc: {fileID: 2800000, guid: 38c1ac641dd24b346890969781c10302, type: 3}
+  - _TextureSample0: {fileID: 2800000, guid: e72bff5da66136343bf6cc1192f9aadb, type: 3}
   - _practice_all_shadow_s3tc: {fileID: 2800000, guid: 3c87e4a115b950a42b9c995d23e592e7, type: 3}
+  - _practice_snow_kiwa_s3tc1: {fileID: 2800000, guid: 38c1ac641dd24b346890969781c10302, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 

@@ -59,6 +59,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: e72bff5da66136343bf6cc1192f9aadb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _practice_all_shadow_s3tc:
         m_Texture: {fileID: 2800000, guid: 3c87e4a115b950a42b9c995d23e592e7, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -80,7 +84,7 @@ Material:
         m_Scale: {x: 0.1, y: 0.1}
         m_Offset: {x: 0, y: 0}
     - _practice_snow_kiwa_s3tc1:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 39eb886a0e152a542ab16c4f5f9cefa5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _snow_kiwa_kage_win:
@@ -104,13 +108,14 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tiling: 0.0025
+    - _Tiling: 0.002
     - _UVSec: 0
-    - _XPos: 0.2
-    - _ZPos: -1.5
+    - _XPos: 0.25
+    - _ZPos: 0.09
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:

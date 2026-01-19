@@ -95,10 +95,10 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tiling: 0.001
+    - _Tiling: 0.0025
     - _UVSec: 0
-    - _XPos: 0
-    - _ZPos: 0
+    - _XPos: 0.2
+    - _ZPos: -1.5
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:

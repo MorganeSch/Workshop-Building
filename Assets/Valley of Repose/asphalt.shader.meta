@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 37258e428f2873048bed407af054dbd1
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _practice_asphalt_dan_s3tc: {fileID: 2800000, guid: 352112a6cbc801448a6d06d250c06b81, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

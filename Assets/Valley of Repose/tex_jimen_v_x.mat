@@ -94,9 +94,9 @@ Material:
     - _Tiling: 0.0025
     - _UVSec: 0
     - _XPos: 0.2
-    - _XPos1: 0.2
+    - _XPos1: 0
     - _ZPos: -1.5
-    - _ZPos1: -1.5
+    - _ZPos1: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
