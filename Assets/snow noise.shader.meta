@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: bb70e2d92b8b1004aa423f49218a178a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _practice_kan_snow_i4: {fileID: 2800000, guid: 4009f1d9d8b090a45afbe6f7effda06b, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

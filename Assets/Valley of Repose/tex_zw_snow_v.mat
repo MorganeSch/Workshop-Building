@@ -64,11 +64,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _practice_kan_snow_i4:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4009f1d9d8b090a45afbe6f7effda06b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _practice_mask_snow_mip_i4:
-        m_Texture: {fileID: 2800000, guid: 5a55749fea8af9c408c4c5ac87315f3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 93cdac958d0d2e349a9d2ddbca26cce4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _practice_mask_snow_mip_i5:
+        m_Texture: {fileID: 2800000, guid: 93cdac958d0d2e349a9d2ddbca26cce4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _practice_snow_kiwa_s3tc:
